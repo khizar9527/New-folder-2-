@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style >
+      
+      .dropdown:hover .dropdown-menu{
+          display:block;
+      }
+
+      .custom{
+        padding: 6px 10px;
+        font-size :1rem; 
+        color:#024594 ;
+      }
+
+      @media (max-width: 767px){
+        .hidden-mobile{
+          display:none;
+        }
+      }
+
+      
+
+  </style>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <header class="hidden-mobile">
+        <div class="px-0 py-0 bg-light text-black">
+          <div class="container">
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-0" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+              </div>
+            </div>
+
+            
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+              </a>
+              <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                <li>
+                
+                  <a href="#" class="nav-link text-black">
+                    <svg  class="bi d-block mx-auto mb-1" width="20" height="24"><use xlink:href="#home"/></svg>
+                    <img src="images/accessibility.png" alt="" width="25" height="25">
+                    Accessibility
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-black">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
+                    <img src="images/book.png" alt="" width="24" height="24">
+                    Book An Appointment
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-black">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
+                    <img src="images/service.png" alt="" width="24" height="24">
+                    Online Services
+                  </a>
+                </li>
+                <li>
+                  <a href="login1.html" class="nav-link text-black">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid" /></svg>
+                  <img src="images/login.png" alt="" width="24" height="24">
+                    Login
+                  </a>
+                </li>
+                <li>
+                  <a href="https://maps.app.goo.gl/xPkrV1Ujk73NUda5A" class="nav-link text-black">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
+                  <img src="images/location.png" alt="" width="24" height="24">
+                    Nanded Hospital
+                 
+                  </a>
+                </li>
+                
+              </ul>
+              
+            </div>
+            
+          </div>
+          
+        </div>
+        
+        
+      </header>
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="images/nanded.png" alt="Bootstrap" width="170" height="50">
+            <div class="col-lg-6 col-md-7 col-12">
+            <ul class="top-contact hidden-mobile">
+              <i class="fa fa-phone"></i><a href="555555555555">Appointment:555555555555 </a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+              <i class="fa fa-envelope"></i><a href="55665656565">Emergency:55665656565</a>
+            </ul>
+         
+          </a>
+        </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pateint Care 
+                    </a>
+                    <ul class="dropdown-menu" >
+                      <li><a class="dropdown-item" href="#">Patient And Visitors Guide</a></li>
+                      <li><a class="dropdown-item" href="#">Veiw Reports</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Book An Appointment</a></li>
+                    </ul>
+                  </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Doctors
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Specialities & Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Researches And Academics
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Philantrophy
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </ul>
+            
+          </nav>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                
+                <img src="images/sliding img2.png" class="d-block w-100" alt="...">
+
+              <div class="carousel-caption d-none d-md-block">
+                <div class="container-fluid">
+                  <div class="row" style="background-color: #FFFFFF; height: auto;border-top-right-radius: 50px 50px;
+                  border-bottom-right-radius: 50px 50px; border-top-left-radius: 50px 50px;border-bottom-left-radius:50px 50px;">
+                    <div class="col-sm-3 ">
+                        
+                      <div class="card" style="border: none;border-top-right-radius: 50px 50px;
+                      border-bottom-right-radius: 50px 50px; border-top-left-radius: 50px 50px;border-bottom-left-radius:50px 50px;">
+                        
+                        <div class="card-body">
+                        
+                            <img src="images/book_an_appointment png.svg" alt="">
+                            
+                          <h5 class="card-title">BOOK AN APPOINTMANT</h5>
+                          <p class="card-text">Consult at Hospital or Teleconsult</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="card" style="border: none;">
+                        <div class="card-body">
+                            <img src="images/find_doctors png.svg" alt="">
+                          <h5 class="card-title">FIND DOCTORS</h5>
+                          <p class="card-text">Search according to Specialities and more</p>
+                     
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="border: none;">
+                          <div class="card-body">
+                            <img src="images/online-medical-consultation-diagnosis png.svg" alt="">
+                            <h5 class="card-title">ONLINE SERVICES</h5>
+                            <p class="card-text">Form biling to online reports</p>
+                        
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card" style="border: none;border-top-right-radius: 50px 50px;
+                        border-bottom-right-radius: 50px 50px; border-top-left-radius: 50px 50px;border-bottom-left-radius:50px 50px;">
+                          <div class="card-body">
+                            <img src="images/Health first png.svg" alt="">
+                            <h5 class="card-title">HEALTHFIRST</h5>
+                            <p class="card-text">Preventive Health checkup</p>
+                          
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                
+
+              </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/women care baner.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="container-fluid">
+                    <div class="row" style="background-color: #FFFFFF; height: auto;border-top-right-radius: 50px 50px;
+                    border-bottom-right-radius: 50px 50px; border-top-left-radius: 50px 50px;border-bottom-left-radius:50px 50px;">
+                      <div class="col-sm-3 ">
+                          
+                        <div class="card" style="border: none;border-top-right-radius: 50px 50px;
+                        border-bottom-right-radius: 50px 50px; border-top-left-radius: 50px 50px;border-bottom-left-radius:50px 50px;">
+                          
+                          <div class="card-body">
+                          
+                              <img src="images/book_an_appointment png.svg" alt="">
+                              
+                            <h5 class="card-title">BOOK AN APPOINTMANT</h5>
+                            <p class="card-text">Consult at Hospital or Teleconsult</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card" style="border: none;">
+                          <div class="card-body">
+                              <img src="images/find_doctors png.svg" alt="">
+                            <h5 class="card-title">FIND DOCTORS</h5>
+                            <p class="card-text">Search according to Specialities and more</p>
+                       
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                          <div class="card" style="border: none;">
+                            <div class="card-body">
+                              <img src="images/online-medical-consultation-diagnosis png.svg" alt="">
+                              <h5 class="card-title">ONLINE SERVICES</h5>
+                              <p class="card-text">Form biling to online reports</p>
+                          
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="card" style="border: none;border-top-right-radius: 50px 50px;
+                          border-bottom-right-radius: 50px 50px; border-top-left-radius: 50px 50px;border-bottom-left-radius:50px 50px;">
+                            <div class="card-body">
+                              <img src="images/Health first png.svg" alt="">
+                              <h5 class="card-title">HEALTHFIRST</h5>
+                              <p class="card-text">Preventive Health checkup </p>
+                            
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/Mind Maze Website Cover.jpg" class="d-block w-100" alt="...">
+
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="container-fluid">
+                    <div class="row" style="background-color: #FFFFFF; height: auto;border-top-right-radius: 50px 50px;
+                    border-bottom-right-radius: 50px 50px; border-top-left-radius: 50px 50px;border-bottom-left-radius:50px 50px;">
+                      <div class="col-sm-3 ">
+                          
+                        <div class="card" style="border: none;border-top-right-radius: 50px 50px;
+                        border-bottom-right-radius: 50px 50px; border-top-left-radius: 50px 50px;border-bottom-left-radius:50px 50px;">
+                          
+                          <div class="card-body">
+                          
+                              <img src="images/book_an_appointment png.svg" alt="">
+                              
+                            <h5 class="card-title">BOOK AN APPOINTMANT</h5>
+                            <p class="card-text">Consult at Hospital or Teleconsult</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card" style="border: none;">
+                          <div class="card-body">
+                              <img src="images/find_doctors png.svg" alt="">
+                            <h5 class="card-title">FIND DOCTORS</h5>
+                            <p class="card-text">Search according to Specialities and more</p>
+                       
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                          <div class="card" style="border: none;">
+                            <div class="card-body">
+                              <img src="images/online-medical-consultation-diagnosis png.svg" alt="">
+                              <h5 class="card-title">ONLINE SERVICES</h5>
+                              <p class="card-text">Form biling to online reports</p>
+                          
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="card" style="border: none;border-top-right-radius: 50px 50px;
+                          border-bottom-right-radius: 50px 50px; border-top-left-radius: 50px 50px;border-bottom-left-radius:50px 50px;">
+                            <div class="card-body">
+                              <img src="images/Health first png.svg" alt="">
+                              <h5 class="card-title">HEALTHFIRST</h5>
+                              <p class="card-text">Preventive Health checkup</p>
+                            
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+
+          <div class="container-fluid" style="background-color: #F8F9FD;margin-top: 1%;">
+            <div class="row" >
+              <div class="col-md-6" >
+                <div class="container-fluid" style="align-items: center;padding:10%;width: 100%;height: 100%;">
+            <div class="card" style=" box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);width: 100%;height:100%;border: 1px solid  #707070;padding-top:10%;padding:5% ;border-top-right-radius: 50px 50px;
+            border-bottom-right-radius: 50px 50px; border-top-left-radius: 50px 50px;border-bottom-left-radius: 50px 50px;">
+              <div class="card-body" >
+                <h2 class="For Patients">For Patients</h2><br>
+                <h5 class="card-subtitle mb-2 text-muted">Which of these health care services can we help you with?</h5>
+                <br>
+                <div style="margin: 30px 0 0;">
+              <div class="row">
+                <div class="col-md-6"> <button type="button" class="btn btn-outline-primary" style="color:#024594;border:solid 1px #707070;margin-bottom: 1%;border-top-right-radius: 20px 20px;
+                border-bottom-right-radius: 20px 20px; border-top-left-radius: 20px 20px;
+                border-bottom-left-radius: 20px 20px;padding:5%;padding-left: 11%;padding-right: 11%;margin-bottom:8%;">Consultation </button></div>
+              <div class="col-md-6">  <button type="button" class="btn btn-outline-primary" style="color:#024594;border:solid 1px #707070; border-top-right-radius: 20px 20px;
+                border-bottom-right-radius: 20px 20px; border-top-left-radius: 20px 20px;
+                border-bottom-left-radius: 20px 20px;padding:5%;margin-bottom:8%;">Admission Process</button></div>
+               <div class="col-md-6"> <button type="button" class="btn btn-outline-primary" style="color:#024594;border:solid 1px #707070;margin-bottom: 1%; border-top-right-radius: 20px 20px;
+                border-bottom-right-radius: 20px 20px; border-top-left-radius: 20px 20px;
+                border-bottom-left-radius: 20px 20px;padding:5%;padding-left: 8%;padding-right: 8%;margin-bottom:8%;">Insurance & TPA</button> </div>
+               <div class="col-md-6"> <button type="button" class="btn btn-outline-primary" style="color:#024594;border:solid 1px #707070;border-top-right-radius: 20px 20px;
+                border-bottom-right-radius: 20px 20px; border-top-left-radius: 20px 20px;
+                border-bottom-left-radius: 20px 20px;padding:5%;padding-left: 18%;padding-right: 18%;margin-bottom:8%;">Hospital Tour</button> </div>
+              <div class="col-md-6"> <button type="button" class="btn btn-outline-primary" style="color:#024594; border:solid 1px #707070;border-top-right-radius: 20px 20px;
+                border-bottom-right-radius: 20px 20px; border-top-left-radius: 20px 20px;
+                border-bottom-left-radius: 20px 20px;padding:5%;margin-bottom:8%;">24*7 Emergency</button></div>
+               <div class="col-md-6"> <button type="button" class="btn btn-outline-primary" style="margin:2%;color:#024594; border:solid 1px #707070;border-top-right-radius: 20px 20px;
+                border-bottom-right-radius: 20px 20px; border-top-left-radius: 20px 20px;
+                border-bottom-left-radius: 20px 20px;padding:5%;padding-left: 14%;padding-right: 14%;margin-bottom:8%;">E-Brochure</button></div> 
+               <div class="col-md-6"><button type="button" class="btn btn-outline-primary" style="color:#024594;border:solid 1px #707070; border-top-right-radius: 20px 20px;
+                border-bottom-right-radius: 20px 20px; border-top-left-radius: 20px 20px;
+                border-bottom-left-radius: 20px 20px;padding:5%;margin-bottom:8%;">Short Stay Service</button></div></div> 
+                  <div >
+                    <a href="#"><img src="images/consultation-banner.png" alt="hundredrupeeImage" width="100%",height="100%"></a>
+          
+                </div>
+                </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="col-md-6">
+                <div class="container-fluid" style="align-items: center;padding:10%;">
+          <div class="card" style=" box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);border-top-right-radius: 50px 50px;
+          border-bottom-right-radius: 50px 50px; border-top-left-radius: 50px 50px;border-bottom-left-radius: 50px 50px;width:auto;height:auto; padding: 5%;padding-top:10%;background-image: linear-gradient(to bottom, #024798, #1956a6, #2965b4, #3875c2, #4685d0);">
+            <div class="card-body" >
+              <h2 class="For Patients"style="color:white;">Know about our
+                Specialities, Doctors & Clinics</h2><br>
+              <h4 class="card-subtitle mb-2 text-white"style="color">Find the right doctor for your needs</h4>
+              <br>
+              <br>
+          
+              <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" style="z-index: 100;
+              max-height: 180px;background: transparent;    border: 1px solid #b5b5b5; color: #fff;">
+                <option class="custom" selected>Search By Speciality</option>
+                <option class="custom" value="1">cardiology</option>
+                <option class="custom"value="2">Orthopedic</option>
+                <option class="custom"value="3">Neurologist</option>
+              </select>
+              
+              <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" style="background: transparent; color: #fff; border:1px solid #b5b5b5;">
+                <option class="custom"selected>Sub Category</option>
+                <option class="custom" value="1">Doctor Aslam</option>
+                <option  class="custom"value="2">Doctor khizar</option>
+                <option class="custom" value="3">Doctor Zahir</option>
+              </select>
+              <button type="button" class="btn btn-outline-light" style="margin-bottom: 2%;margin-top: 7%; border-radius: 26px;letter-spacing: 1px;text-transform: uppercase;
+                width:auto;min-width: 200px; border:1px solid #b5b5b5;">Search</button>
+          
+              <div style="margin-top:-18% ;margin-left: 35%;"><img class="img-fluid" src="images/search_speciality_bg_img.png" height="100%"width="100%"></div>
+          
+           </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class="container" style=" padding: 50px; align-items: center;">
+            <div class="row" >
+              <div class="col" >
+            <div class="img-fluid"><img src="images/123.png" >
+          
+            </div>
+            </div>
+              <div class="col-md-8"  >
+            <div class="text" style="height:auto;width:auto;">
+              <h2>About P. D. Hinduja Hospital</h2>
+              <p  style="font-size: 1.05rem;">“Our healthcare journey commenced in 1951 by the late Shri P. D. Hinduja, with a vision to provide quality
+              healthcare for all. Over the last seven decades, we have passionately followed this philosophy and today the
+              hospital is regarded as one of the top hospitals in Mumbai and one of the best hospitals in India. We commit to
+              move forward with greater zeal and determination to set new benchmarks in medical excellence and patient care."</p>
+              <img class="img-fluid" src="images/dot strt.svg" alt="">
+              <p style="font-size: 1.5rem;padding-bottom: 20px;">Health and Education are the birth right of every citizen<img class="img-fluid" src="images/dot end.svg" alt=""></p>
+              <button type="button" class="btn btn-outline-primary" style=" width:auto;min-width: 200px;   border: solid 1px #024594;text-transform: uppercase;color: #024594;
+              border-radius: 26px;letter-spacing: 1px;">know more</button>
+            </div>
+          </div>    
+            
+            </div>
+          </div>
+          </div>
+
+
+
+
+
+         
+          
+            
+    <header class="py-3 mb-4 border-bottom">
+      <div class="container d-flex flex-wrap justify-content-center">
+        <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="5"><use xlink:href="#bootstrap"/></svg>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            </a>
+          </div>
+        </a>
+      </div>
+    </div>
+    </div>
+    </header>
+   
+
+
+    <div class = 'container-fluid' style="padding:60px 0px;">
+      <div class="row justify-content-center">
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body"style="height:28rem">
+                <img class="card-img-top" src="images/health_first_thumb.jpg" alt="Card image cap">
+                <h3 class="card-title"  style="color: #024594;">HealthFirst - Preventive Health Checkup</h3>
+                <br>
+                <p class="card-text">Quality training for healthcare professionals through a wide range of specialized courses.</p>
+                <button type="button" class="btn btn-outline-primary" style="margin-bottom: 2%;margin-top: 15%; border-top-right-radius: 20px 20px;
+                  border-bottom-right-radius: 20px 20px; border-top-left-radius: 20px 20px;
+                  border-bottom-left-radius: 20px 20px;position: absolute;right: 35px;bottom: 15px;padding-right:40px;padding-left: 40px;">KNOW MORE</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body"style="height:28rem">
+                  <img class="card-img-top" src="images/Care@home.jpg" alt="Card image cap">
+                  <h3 class="card-title" style="color: #024594;">Care@Home</h3>
+                  <br>
+                  <p class="card-text">Research is the backbone of quality health care services. Our research efforts include innovating newer treatments.</p>
+                  <button type="button" class="btn btn-outline-primary" style="margin-bottom: 2%;margin-top: 15%; border-top-right-radius: 20px 20px;
+                  border-bottom-right-radius: 20px 20px; border-top-left-radius: 20px 20px;
+                  border-bottom-left-radius: 20px 20px;position: absolute;right: 35px;bottom: 15px;padding-right:40px;padding-left: 40px;">KNOW MORE</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body"style="height:28rem">
+                  <img class="card-img-top" src="images/Lab Services.jpg" alt="Card image cap">
+                  <h3 class="card-title" style="color: #024594;">Lab Services</h3>
+                  <br>
+                  <p class="card-text">Recognition of our facility, our pursuit of quality and our compassionate care</p>
+                  <button type="button" class="btn btn-outline-primary float-down" calss="align-middle" style="margin-bottom: 2%;margin-top: 15%; border-top-right-radius: 20px 20px;
+                  border-bottom-right-radius: 20px 20px; border-top-left-radius: 20px 20px;
+                  border-bottom-left-radius: 20px 20px;position: absolute;right: 35px;bottom: 15px;padding-right:40px;padding-left: 40px;">KNOW MORE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="container-fluid" style="background-color:#F8F9FD ; margin: 3%;">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="patient_stories">
+              <h2>Patient stories</h2><figure><span><img class=" ls-is-cached lazyloaded" src="/assets/images/icons/quote_right.svg" alt=""></span><img src="https://hinduja-prod-assets.s3.ap-south-1.amazonaws.com/s3fs-public/2021-04/patient_stories_thumb.jpg?VersionId=IgeAK2Uxq2QRORvapu2zcQ1JI0IsmuY9" alt="Patient Stories" style="width:80%;">
+              </figure>
+              <div>
+                <h5><strong>Sunita Tickoo </strong></h5>
+
+        <h5>Today,<strong> </strong>I will be sharing my journey of battling cervical cancer.</h5>
+      </div><p><button type="button" class="btn btn-outline-primary btn-lg ">READ MORE</button></p>
+    </div>
+  </div>
+  <div class="col-md-7">
+    <div class="live_to_give_hope"><h1 style="color: #024594;"><b>LIVE TO <br>GIVE HOPE</b></h1>
+      <div>
+        <div class="pb-3">
+        <p style="font-size: 18px; text-align: justify;">Live to Give Hope (LGH) is a charitable fund, set-up to provide quality medical facilities to the needy people from the lower socio economic strata of the society, who cannot afford it, in line with our vision of providing quality healthcare for all.</p>
+        <p style="font-size: 18px">It was inspired by the benevolent work done by Smt. Lalita G. Hinduja and her experience with running a premier medical institute which is "Not for Profit."</p>
+        </div>
+        </div><button type="button" class="btn btn-outline-primary btn-lg">KNOW MORE</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class = 'container-fluid' style="padding:60px 0px;">
+  <div class="row justify-content-center">
+      <div class="col-sm-2">
+        <div class="card">
+          <div class="card-body"style="height:35rem">
+            <img class="card-img-top" src="images/new.jpeg" alt="Card image cap">
+            <h3 class="card-title" style="color: #024594;">What’s New</h3>
+            <br>
+            <h3 class="card-text" style="color: #024594;">Recognised as a Centre for Quality Promotion by CAHO</h3>
+            <br>
+            <button type="button" class="btn btn-outline-primary" style="margin-bottom: 2%;margin-top: 15%; border-top-right-radius: 20px 20px;
+              border-bottom-right-radius: 20px 20px; border-top-left-radius: 20px 20px;
+              border-bottom-left-radius: 20px 20px;position: absolute;right: 35px;bottom: 15px;padding-right:40px;padding-left: 40px;">VIEW MORE</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card">
+          <div class="card-body"style="height:35rem">
+            <img class="card-img-top" src="images/Academics.jpg" alt="Card image cap">
+            <h3 class="card-title"  style="color: #024594;">Academics</h3>
+            <br>
+            <p class="card-text">Quality training for healthcare professionals through a wide range of specialized courses.</p>
+            <button type="button" class="btn btn-outline-primary" style="margin-bottom: 2%;margin-top: 15%; border-top-right-radius: 20px 20px;
+              border-bottom-right-radius: 20px 20px; border-top-left-radius: 20px 20px;
+              border-bottom-left-radius: 20px 20px;position: absolute;right: 35px;bottom: 15px;padding-right:40px;padding-left: 40px;">VIEW MORE</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body"style="height:35rem">
+              <img class="card-img-top" src="images/research.jpg" alt="Card image cap">
+              <h3 class="card-title" style="color: #024594;">Research</h3>
+              <br>
+              <p class="card-text">Research is the backbone of quality health care services. Our research efforts include innovating newer treatments.</p>
+              <button type="button" class="btn btn-outline-primary" style="margin-bottom: 2%;margin-top: 15%; border-top-right-radius: 20px 20px;
+              border-bottom-right-radius: 20px 20px; border-top-left-radius: 20px 20px;
+              border-bottom-left-radius: 20px 20px;position: absolute;right: 35px;bottom: 15px;padding-right:40px;padding-left: 40px;">VIEW MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body"style="height:35rem">
+              <img class="card-img-top" src="images/award.jpg" alt="Card image cap">
+              <h3 class="card-title" style="color: #024594;">Awards</h3>
+              <br>
+              <p class="card-text">Recognition of our facility, our pursuit of quality and our compassionate care</p>
+              <button type="button" class="btn btn-outline-primary float-down" calss="align-middle" style="margin-bottom: 2%;margin-top: 15%; border-top-right-radius: 20px 20px;
+              border-bottom-right-radius: 20px 20px; border-top-left-radius: 20px 20px;
+              border-bottom-left-radius: 20px 20px;position: absolute;right: 35px;bottom: 15px;padding-right:40px;padding-left: 40px;">VIEW MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: #F8F9FD;margin: 3% 0%;padding-bottom: 2%; display: flex;
+    justify-content: center;
+    align-items: center;">
+      <div class="row">
+        <div class="container-fluid">
+          <div class="row">
+            <h3 style="text-align:Center;color: #024594;padding-bottom: 1%;">Hospital Tour</h3>
+          </div>
+        </div>
+        <div id="specific-carousel" class="carousel" class="slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="col-md-4">
+                      <div class="card">
+                          <div class="card-body">
+                              <img src="images/tourguide1-desktop.jpg" alt="one" class="img-fluid">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item ">
+                  <div class="col-md-4">
+                      <div class="card">
+                          <div class="card-body">
+                              <img src="images/tourguide2-desktop.jpg" alt="two" class="img-fluid">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item ">
+                  <div class="col-md-4">
+                      <div class="card">
+                          <div class="card-body">
+                              <img src="images/tourguide3-desktop.jpg" alt="three" class="img-fluid">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item ">
+                  <div class="col-md-4">
+                      <div class="card">
+                          <div class="card-body">
+                              <img src="images/tourguide4-desktop.jpg" alt="four" class="img-fluid">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item ">
+                  <div class="col-md-4">
+                      <div class="card">
+                          <div class="card-body">
+                              <img src="images/tourguide5-desktop.jpg" alt="five" class="img-fluid">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item ">
+                  <div class="col-md-4">
+                      <div class="card">
+                          <div class="card-body">
+                              <img src="images/tourguide6-desktop.jpg" alt="six" class="img-fluid">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item ">
+                  <div class="col-md-4">
+                      <div class="card">
+                          <div class="card-body">
+                              <img src="images/tourguide7-desktop.jpg" alt="seven" class="img-fluid">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item ">
+                  <div class="col-md-4">
+                      <div class="card">
+                          <div class="card-body">
+                              <img src="images/tourguide8-new-desktop.jpg" alt="eight" class="img-fluid">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item ">
+                  <div class="col-md-4">
+                      <div class="card">
+                          <div class="card-body">
+                              <img src="images/tourguide9-desktop.jpg" alt="nine" class="img-fluid">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item ">
+                  <div class="col-md-4">
+                      <div class="card">
+                          <div class="card-body">
+                              <img src="images/tourguide10-desktop.jpg" alt="ten" class="img-fluid">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#specific-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#specific-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <script src="new.js"></script>
+
+
+
+
+   
+<div class="b-example-divider" style="background-color: #F9FBFF;">
+
+
+<div class="container">
+  <footer class="py-5" >
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3" style="margin-left: 15%;">
+        <ul class="nav flex-column">
+          <b><li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">For Patients</a></li></b>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Centers of Excellence</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">- Center for Cancer Care</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">- Center for Cardiac Care</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">- Center for Neuro Care</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">- Center for Orthopedic Care</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Specialties & Services</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Specialty Clinics</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Care@Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Short Stay Service</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">HealthFirst - Preventive Health checkup</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Health Blog</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Teleconsultation</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Online services</a></li><br><br>
+          <b><li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Research & Academicsn</a></li></b>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Academics</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Research</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3" style="margin-left: 15%;">
+        <ul class="nav flex-column">
+         <b> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">For Doctors</a></li></b><br>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Search by Last Name</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Search by Specialities</a></li><br>
+         <b> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Awards</a></li></b><br>
+         <b> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Accreditations</a></li></b>
+         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="images/nabh.png" height="40px" weidth="80px">  NABH </a></li>
+         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="images/nabl.png" height="40px" weidth="80px">  NABL </a></li>
+         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="images/cap.png" height="40px" weidth="80px">  CAP </a></li>
+         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="images/iso.png" height="40px" weidth="80px">  ISO </a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3" style="margin-left: 15%;">
+        <b><ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">contact us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Enquiry</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Careers</a></li><br><br>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Locate Us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">News and Media</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Events and Conferences</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Testimonials</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Stent Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Knee Implant Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">BMI Calculator</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">E Brochure</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Administration Policies</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sitemap</a></li><br><br>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" style="margin-left:-5%;">Follow Nanded Hospital on</a></li>
+          <div class="row">
+            <div class="col-md-3" >
+          <a href="https://in.linkedin.com"><img src="images/linkedin.png" height="40" width="auto" alt=""></a></div>
+          <div class="col-md-3" >
+          <a href="https://in.linkedin.com"><img src="images/instagram.jpg" height="40" width="auto" alt=""></a></div>
+          <div class="col-md-3" >
+          <a href="https://in.linkedin.com" ><img src="images/teitter.png" height="40" width="auto" alt=""></a></div></div>
+          
+        </ul></b>
+    
+      </div>
+    </div>
+  </footer>
+</div>
+</div>
+
+            
+  
+   
+    
+    
+</body>
+</html>
